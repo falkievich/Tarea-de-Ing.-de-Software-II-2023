@@ -20,4 +20,4 @@ jobs:
         pip install -U pytest
     - name: Run Pytest
       run: |
-        pytest .\test.py -v
+        pytest test.py -v
