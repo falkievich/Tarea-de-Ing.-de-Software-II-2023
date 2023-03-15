@@ -1,0 +1,27 @@
+name: Run Test Python Proyecto 1
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - name: Install Virtual env
+      run: |
+        virtualenv env   
+    - name: Install dependencies
+      run: |
+        pip install -U pytest
+        python.exe -m pip install --upgrade pip
+    - name: Run Pytest
+      run: |
+        pytest .\test.py -v
