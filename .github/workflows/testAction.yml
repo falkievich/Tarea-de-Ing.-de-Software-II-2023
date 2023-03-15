@@ -18,7 +18,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -U pytest
-        python.exe -m pip install --upgrade pip
     - name: Run Pytest
       run: |
         pytest .\test.py -v
