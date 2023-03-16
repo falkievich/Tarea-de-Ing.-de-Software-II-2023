@@ -4,13 +4,8 @@ class ElementoBase:
         self.nombre = nombre
         self.tamano = tamano
         
+    def obtenerTamano(self):
+        return self.tamano    
 
-    """def printear(self):     #Prueba sacar lluego
-        print("nombre =", self.nombre)
-        print("tamaño=", self.tamano) """
-        
-    
-    def obtenerTamano(self, objeto):
-        return objeto.tamano    #MAL
 
 

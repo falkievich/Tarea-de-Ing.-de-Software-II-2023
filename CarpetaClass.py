@@ -7,7 +7,11 @@ class Carpeta(ElementoBaseClass.ElementoBase):              #Herencia de Element
         self.lista = []
 
     def guardarEnCarpeta(self, objeto):
-        return self.lista.append(objeto)
+        self.lista.append(objeto)
+        self.tamano += objeto.tamano
+
+ 
+
 
     
 
