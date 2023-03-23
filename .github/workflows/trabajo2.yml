@@ -23,4 +23,4 @@ jobs:
         pytest .\test.py -v
     - name: Run Test Ejercicio 2
       run: |
-        pytest .\Tarea 2 - Ascensor\.Test.py -v
+        pytest .\Test.py -v
