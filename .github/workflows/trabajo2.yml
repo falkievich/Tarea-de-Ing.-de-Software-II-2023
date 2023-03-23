@@ -18,6 +18,9 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -U pytest
-    - name: Run Pytest
+    - name: Run Test Ejercicio 1
       run: |
-        pytest .\Test.py -v
+        pytest .\test.py -v
+    - name: Run Test Ejercicio 2
+      run: |
+        pytest .\Tarea 2 - Ascensor\.Test.py -v
