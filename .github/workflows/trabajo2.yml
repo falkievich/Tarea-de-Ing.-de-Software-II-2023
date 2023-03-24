@@ -19,7 +19,6 @@ jobs:
       run: |
         pip install -U pytest
 
-    - uses: ./Tarea 2 - Ascensor 
     - name: Run Test Ejercicio 2
       run: |
-        pytest .\Test.py -v
+        pytest Tarea 2 - Ascensor/Test.py -v
