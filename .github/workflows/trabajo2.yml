@@ -21,4 +21,4 @@ jobs:
 
     - name: Run Test Ejercicio 2
       run: |
-        pytest Tarea-de-Ing.-de-Software-II-2023/Tarea 2 - Ascensor/Test.py -v -s
+        pytest "Tarea 2 - Ascensor/Test.py" -v -s
