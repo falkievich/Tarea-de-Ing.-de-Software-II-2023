@@ -20,4 +20,4 @@ jobs:
         pip install -U pytest
     - name: Run Pytest
       run: |
-        pytest test.py -v
+        pytest "Tarea 1 - Archivo/test.py" -v -s
