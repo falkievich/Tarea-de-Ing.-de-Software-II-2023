@@ -21,4 +21,4 @@ jobs:
 
     - name: Run Test Ejercicio 2
       run: |
-        pytest "Tarea 2 - Ascensor/Test.py" -v -s
+        pytest "Tarea 2 - Ascensor/Intento 1 (No cumple los requerimientos)/Test.py" -v -s
