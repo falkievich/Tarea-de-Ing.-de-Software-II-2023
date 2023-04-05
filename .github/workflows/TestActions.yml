@@ -1,0 +1,40 @@
+name: Run Test Python
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - name: Install dependencies
+      run: |
+        pip install -U pytest
+    
+    - name: Run Test Ejercicio 1
+      run: |
+        pytest "Tarea 1 - Archivo/test.py" -v -s
+        
+    - name: Run Test Ejercicio 2
+      run: |
+        pytest "Tarea 2 - Ascensor/Intento 1 (No cumple los requerimientos)/Test.py" -v -s
+        
+    - name: Run Test Ejercicio 2.1
+      run: |
+        pytest "Tarea 2 - Ascensor/Intento 2/Test.py" -v -s
+    
+    - name: Run Test Ejercicio 3
+      run: |
+        pytest "Tarea 3 - Piedra Papel Tijera/Test.py" -v -s
+        
+    - name: Run Test Ejercicio 4
+      run: |
+        pytest "Tarea BlockChain/test.py" -v -s
