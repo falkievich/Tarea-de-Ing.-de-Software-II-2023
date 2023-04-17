@@ -38,3 +38,7 @@ jobs:
     - name: Run Test Ejercicio 4
       run: |
         pytest "Tarea BlockChain/test.py" -v -s
+
+    - name: Run Test Tp 1
+      run: |
+        pytest "Tp 1/PatronProxy/test.py" -v -s
