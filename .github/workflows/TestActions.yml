@@ -21,19 +21,19 @@ jobs:
     
     - name: Run Test Ejercicio 1
       run: |
-        pytest "Tarea 1 - Archivo/test.py" -v -s
+        pytest "Tarea 1.1 - Archivo/test.py" -v -s
         
     - name: Run Test Ejercicio 2
       run: |
-        pytest "Tarea 2 - Ascensor/Intento 1 (No cumple los requerimientos)/Test.py" -v -s
+        pytest "Tarea 1.2 - Ascensor/Intento 1 (No cumple los requerimientos)/Test.py" -v -s
         
     - name: Run Test Ejercicio 2.1
       run: |
-        pytest "Tarea 2 - Ascensor/Intento 2/Test.py" -v -s
+        pytest "Tarea 1.2 - Ascensor/Intento 2/Test.py" -v -s
     
     - name: Run Test Ejercicio 3
       run: |
-        pytest "Tarea 3 - Piedra Papel Tijera/Test.py" -v -s
+        pytest "Tarea 1.3 - Piedra Papel Tijera/Test.py" -v -s
         
     - name: Run Test Ejercicio 4
       run: |
