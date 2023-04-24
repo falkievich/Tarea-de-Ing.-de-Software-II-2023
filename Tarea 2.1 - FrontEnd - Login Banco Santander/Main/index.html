@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Santander Login</title>
+    <!-- Enlace al archivo CSS de Tailwind -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+
+<body class="bg-gray-200 flex items-center justify-center h-screen ">
+
+    <div class="grid grid-cols-5">
+
+        <div class="col-span-3 hidden sm:block ">             <!-- Imagen -->
+            <img src="/Imagenes/Santander_Imagen.jpg" alt="Imagen de fondo" class="w-full h-screen object-cover">
+        </div>
+        
+        <div class="col-span-2 w-full flex flex-col justify-center ">               <!-- Formulario -->
+
+            <form class="w-full flex flex-col items-center">
+
+                <h1 class="text-3xl text-center font-bold mb-6">Ingresá tus datos para operar</h1> 
+
+                <div class="mb-4 mx-auto w-full text-center">                      <!-- Num. Documento-->
+                    <input type="text" placeholder="Tu número de documento" id="documento" name="documento" class="text-left w-3/4 px-3 py-2 my-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ">
+                </div>
+
+                <div class="mb-4 mx-auto w-full text-center">                      <!-- Nombre de usuario -->
+                    <input type="text" placeholder="Tu nombre de usuario" id="usuario" name="usuario" class="text-left w-3/4 px-3 py-2 my-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ">
+                </div>
+
+                <div class="mb-4 mx-auto w-full text-center relative">                                          <!-- Clave -->
+                    <input type="password" name="password" id="password" class="w-3/4 py-2 pr-10 pl-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Contraseña">
+                    <button type="button" class="w-1/6 absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-600 hover:text-gray-800 focus:outline-none" onclick="togglePasswordVisibility()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>    
+                    </button>
+                </div>
+                  
+
+                <div class="mb-8 flex items-center w-3/4 ">                        <!-- CheckBox -->
+                    <input type="checkbox" id="recordar" name="recordar" class="h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="recordar" class="ml-2 text-center  block text-sm text-gray-900">
+                    Recordar mi número de documento
+                    </label>
+                </div>
+
+                <div class="mb-10 w-full flex justify-center">     <!-- Botón Iniciar Sesión-->
+                    <button type="submit" class="w-3/4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Iniciar sesión</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
