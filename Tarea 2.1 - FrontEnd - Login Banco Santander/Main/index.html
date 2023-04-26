@@ -11,7 +11,7 @@
 
 <body class="bg-gray-200 flex items-center justify-center h-screen ">
 
-    <div class="grid grid-cols-5">
+    <div class="grid sm:grid-cols-5">
 
         <div class="col-span-3 hidden sm:block ">             <!-- Imagen -->
             <img src="/Imagenes/Santander_Imagen.jpg" alt="Imagen de fondo" class="w-full h-screen object-cover">
@@ -21,34 +21,52 @@
 
             <form class="w-full flex flex-col items-center">
 
-                <h1 class="text-3xl text-center font-bold mb-6">Ingresá tus datos para operar</h1> 
+                <h1 class="text-3xl text-center font-bold mb-6 flex items-center">      <!-- Login -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                    </svg> 
+                    <span class="ml-2">Login</span>
+                </h1>
 
-                <div class="mb-4 mx-auto w-full text-center">                      <!-- Num. Documento-->
-                    <input type="text" placeholder="Tu número de documento" id="documento" name="documento" class="text-left w-3/4 px-3 py-2 my-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ">
-                </div>
-
-                <div class="mb-4 mx-auto w-full text-center">                      <!-- Nombre de usuario -->
-                    <input type="text" placeholder="Tu nombre de usuario" id="usuario" name="usuario" class="text-left w-3/4 px-3 py-2 my-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ">
-                </div>
-
-                <div class="mb-4 mx-auto w-full text-center relative">                                          <!-- Clave -->
-                    <input type="password" name="password" id="password" class="w-3/4 py-2 pr-10 pl-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Contraseña">
-                    <button type="button" class="w-1/6 absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-600 hover:text-gray-800 focus:outline-none" onclick="togglePasswordVisibility()">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>    
-                    </button>
+                <div class="mb-4 mx-auto w-full text-center flex items-center justify-center">                      <!-- Num. Documento-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                    </svg>
+                    <input type="text" placeholder="Tu número de documento" id="documento" name="documento" class="mr-8 text-left w-3/4 px-3 py-2 my-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ">
                 </div>
                   
 
-                <div class="mb-8 flex items-center w-3/4 ">                        <!-- CheckBox -->
-                    <input type="checkbox" id="recordar" name="recordar" class="h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-                    <label for="recordar" class="ml-2 text-center  block text-sm text-gray-900">
-                    Recordar mi número de documento
-                    </label>
+                <div class="mb-4 mx-auto w-full text-center flex items-center justify-center">                      <!-- Nombre de usuario -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>
+                    <input type="text" placeholder="Tu nombre de usuario" id="usuario" name="usuario" class="mr-8 text-left w-3/4 px-3 py-2 my-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ">
                 </div>
 
+                <div class="flex items-center w-full mx-auto mb-4 justify-center ">                                                <!-- Clave -->
+                    <div class="mr-2">   <!-- Huella Digital SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                      </svg>
+                    </div>
+                                        
+                    <input type="password" name="password" id="password" class="w-3/4 py-2 pr-10 pl-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Contraseña">
+                    <button type="button" class="ml-2 text-gray-600 hover:text-gray-800 focus:outline-none" onclick="togglePasswordVisibility()">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>             <!-- Ojo SVG -->  
+                    </button>
+                </div>
+            
+
+                <div class="mb-8 flex items-center w-3/4">                      <!-- CheckBox-->
+                    <input type="checkbox" id="recordar" name="recordar" class="h-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded h-6 w-6 sm:h-4 sm:w-4 sm:focus:ring-2">
+                    <label for="recordar" class="ml-2 text-center block text-sm text-gray-900">
+                      Recordar mi número de documento
+                    </label>
+                  </div>
+                  
                 <div class="mb-10 w-full flex justify-center">     <!-- Botón Iniciar Sesión-->
                     <button type="submit" class="w-3/4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Iniciar sesión</button>
                 </div>
